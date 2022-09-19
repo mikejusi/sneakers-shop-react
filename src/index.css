@@ -217,6 +217,7 @@ header{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
+  display: none;
 }
 
 .right__board{
@@ -236,11 +237,14 @@ header{
 }
 
 .cart__content{
+  overflow: auto;
   flex: 1;
+  margin: 40px 0 30px;
+  padding: 0 10px;
 }
 
 .cart__item{
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 14px 10px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -257,7 +261,7 @@ header{
 .remove__btn{
   cursor: pointer;
   background-color: white;
-  padding: 8px 12px;
+  padding: 8px 8px;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
 }
@@ -280,4 +284,31 @@ header{
   display: flex;
   align-items: flex-end;
   margin-bottom: 20px;
+}
+
+.cart__buy{
+  position: relative;
+  cursor: pointer;
+  background-color: #9dd558;
+  height: 55px;
+  border: 0;
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.cart__buy:hover .arrow__buy{
+  transform: translateX(4px);
+}
+
+.cart__buy:hover{
+  transition: .2s;
+  background-color: #86b64c;
+}
+
+.arrow__buy{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  transition: transform .2s ease-in-out;
 }
