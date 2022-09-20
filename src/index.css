@@ -133,7 +133,8 @@ header{
 
 .btn__buy:hover, .btn__buy:active, .btn__buy:focus{
   transition: .2s;
-  background-color: green;
+  background-color: #00d400;
+  border-color: #00d400;
 }
 
 .btn__buy:hover svg path{

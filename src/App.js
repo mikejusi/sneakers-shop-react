@@ -11,7 +11,8 @@ const crd = [
   { id: '', title: 'Мужские Кроссовки Nike Kyrie 7', price: '11 299', pict: 'img/sneaker_6.jpg' },
   { id: '', title: 'Мужские Кроссовки Jordan Air Jordan 11', price: '10 799', pict: 'img/sneaker_7.jpg' },
   { id: '', title: 'Мужские Кроссовки Nike LeBron XVIII', price: '16 499', pict: 'img/sneaker_8.jpg' },
-  { id: '', title: 'Мужские Кроссовки Nike Lebron XVIII Low', price: '13 999', pict: 'img/sneaker_9.jpg' }
+  { id: '', title: 'Мужские Кроссовки Nike Lebron XVIII Low', price: '13 999', pict: 'img/sneaker_9.jpg' },
+  { id: '', title: 'Мужские Кроссовки Nike Kyrie Flytrap IV', price: '11 299', pict: 'img/sneaker_10.jpg' }
 ]
 
 function App() {
