@@ -1,37 +1,33 @@
-import remove from '../assets/img/remove__item.svg';
-import arrow from '../assets/img/arrow.svg';
-import sn1 from '../assets/img/sneaker_1.jpg';
-
 function Cart() {
     return (
         <div className='overlay'>
             <div className='right__board'>
             <div className='d-flex'>          
                 <h3 className='cart__title'>Корзина</h3>
-                <img className='remove__btn ml-auto' src={remove} alt='remove' />
+                <img className='remove__btn ml-auto' src="img/remove__item.svg" alt='remove' />
             </div>
 
             <div className='cart__content'>
 
                 <div className='cart__item d-flex align-center'>
-                <img className='mr-20' width={70} height={70} src={sn1} alt='item' />
+                <img className='mr-20' width={70} height={70} src="img/sneaker_1.jpg" alt='item' />
                 <div className='cart__item__desc mr-20'>
                     <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
                     <p>12 999 руб.</p>
                 </div>
                 <button className='remove__btn'>
-                    <img src={remove} alt='remove' />
+                    <img src="img/remove__item.svg" alt='remove' />
                 </button>
                 </div>
 
                 <div className='cart__item d-flex align-center'>
-                <img className='mr-20' width={70} height={70} src={sn1} alt='item' />
+                <img className='mr-20' width={70} height={70} src="img/sneaker_1.jpg" alt='item' />
                 <div className='cart__item__desc mr-20'>
                     <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
                     <p>12 999 руб.</p>
                 </div>
                 <button className='remove__btn'>
-                    <img src={remove} alt='remove' />
+                    <img src="img/remove__item.svg" alt='remove' />
                 </button>
                 </div>
 
@@ -50,7 +46,7 @@ function Cart() {
                 <b>1074 руб.</b>
                 </li>
             </ul>
-            <button className='cart__buy'>Оформить заказ <img className='arrow__buy' src={arrow} alt='->' /></button>
+            <button className='cart__buy'>Оформить заказ <img className='arrow__buy' src="img/arrow.svg" alt='->' /></button>
             </div>
         </div>
     );

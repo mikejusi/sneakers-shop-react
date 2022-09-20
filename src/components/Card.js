@@ -1,6 +1,4 @@
-import sn1 from '../assets/img/sneaker_1.jpg';
-
-function Card() {
+function Card(props) {
     return (
       <div className='card'>
         <div className='text-center'>
@@ -11,14 +9,14 @@ function Card() {
               </svg>
             </div>
           </div>
-          <img className='card__pic' width={133} height={112} src={sn1} alt='nike' />
+          <img className='card__pic' width={133} height={112} src={props.pict} alt='nike' />
         </div>
         
-        <h5 className='card__title'>Мужские Кроссовки Nike Blazer Mid Suede</h5>
+        <h5 className='card__title'>{props.title}</h5>
         <div className='card__bottom d-flex justify-beetwen align-center'>
           <div>
             <span className='price'>Цена:</span>
-            <p className='price__number'>12 999 руб.</p>
+            <p className='price__number'>{props.price} руб.</p>
           </div>
           <button className='btn__buy'>
             <svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">

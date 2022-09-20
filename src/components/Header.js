@@ -1,11 +1,8 @@
-import logo from '../assets/img/logo.png';
-import plus from '../assets/img/plus.svg';
-
 function Header() {
     return (
         <header className='d-flex justify-between align-center p-40'>
             <div className="header__left d-flex align-center">
-                <img className='mr-15' width={40} height={40} src={logo} alt='Sneakers'/>
+                <img className='mr-15' width={40} height={40} src="img/logo.png" alt='Sneakers'/>
                 <div className="header__info">
                     <h3 className='text-uppercase'>React Seakers</h3>
                     <p className='title__desc'>Магазин лучших кроссовок</p>
