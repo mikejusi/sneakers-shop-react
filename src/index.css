@@ -204,7 +204,7 @@ header{
 .like__btn:hover, .like__btn:active, .like__btn:focus{
   transition: .2s;
   background-color: #FEF0F0;
-  border: 1px solid white;
+  border: 1px solid #FEF0F0;
 }
 
 .like__btn:hover svg path{
