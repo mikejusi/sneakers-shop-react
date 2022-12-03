@@ -131,18 +131,24 @@ header{
   cursor: pointer;
 }
 
-.btn__buy:hover, .btn__buy:active, .btn__buy:focus{
+.btn__buy2{
+  margin-left: auto;
+  background-color: #00d400;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.btn__buy:hover{
   transition: .2s;
   background-color: #00d400;
   border-color: #00d400;
 }
 
 .btn__buy:hover svg path{
-  transition: .2s;
-  fill: white;
-}
-
-.btn__buy:focus svg path{
   transition: .2s;
   fill: white;
 }
