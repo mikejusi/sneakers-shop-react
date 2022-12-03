@@ -1,10 +1,10 @@
-function Cart() {
+function Cart(props) {
     return (
         <div className='overlay'>
             <div className='right__board'>
             <div className='d-flex'>          
                 <h3 className='cart__title'>Корзина</h3>
-                <img className='remove__btn ml-auto' src="img/remove__item.svg" alt='remove' />
+                <img onClick={props.onClose} className='remove__btn ml-auto' src="img/remove__item.svg" alt='close' />
             </div>
 
             <div className='cart__content'>

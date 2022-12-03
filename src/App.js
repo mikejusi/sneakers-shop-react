@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './components/Header';
 import Card from './components/Card';
 import Cart from './components/Cart';
@@ -16,11 +17,13 @@ const crd = [
 ]
 
 function App() {
+  const [cartOpened, setCartOpened] = React.useState(false);
+
   return (
     <div className="wrapper">
-      <Cart />
+      {cartOpened ? <Cart onClose={() => setCartOpened(false)} /> : null}
 
-      <Header />
+      <Header onClickCart={() => setCartOpened(true)} />
 
       <div className="content p-40">
         <div className='d-flex justify-between align-center mb-40'>
